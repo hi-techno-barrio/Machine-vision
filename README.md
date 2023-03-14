@@ -34,6 +34,7 @@ The key differences between the previous implementation and this one are:
 This implementation uses the same stereo block matching algorithm and line scanning approach as before, but with the addition of two more cameras. The program also calculates the 3D coordinates of the point of intersection of the four lines detected by the cameras, using a least-squares solution to the linear equation Ax = B, where A is a matrix containing the camera positions and B is a vector containing a point in the world space. Finally, the program draws the point of intersection on all four camera images and displays them in separate windows.
 
 4 Cameras advance
+
 The source code provided is a Python script that uses the OpenCV and YOLO object detection libraries to detect obstacles, lines, and objects from multiple camera feeds.The features of this source code include:
 Object detection: The code uses the YOLO object detection algorithm to detect objects in each camera feed, such as balls, cones, and other objects.
 Multiple camera support: The code supports multiple cameras and can process feeds from the front, back, left, and right cameras.
