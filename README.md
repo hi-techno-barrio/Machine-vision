@@ -11,7 +11,11 @@ C/C++ and Python coding
 
 
 
+2 Cameras
 
+In this updated version of the program, we have added a few lines of code to calculate the distance of the object detected in the left and right camera images. We use the stereo vision output, i.e., the disparity map, to calculate the distance of the object. We have also added the camera parameters such as focal length, sensor width, and baseline to calculate the distance. Finally, we display the calculated distance of the object on both the left and right camera images.
+
+Note: The distance calculation is an approximation and may not be very accurate due to several factors such as camera calibration, object size, and lighting conditions. It is always recommended to calibrate your camera and adjust the parameters according to your specific needs for better accuracy.
 
 
 3 Cameras
